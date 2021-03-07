@@ -11,4 +11,4 @@ add_executable(piface_control_display
 pico_enable_stdio_usb(piface_control_display 1)
 pico_enable_stdio_uart(piface_control_display 1) 
 pico_add_extra_outputs(piface_control_display)
-target_link_libraries(piface_control_display pico_stdlib)
+target_link_libraries(piface_control_display pico_stdlib hardware_spi)
